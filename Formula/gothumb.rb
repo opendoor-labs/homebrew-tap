@@ -3,7 +3,10 @@ require 'language/go'
 class Gothumb < Formula
   desc 'gothumb'
   homepage 'https://github.com/opendoor-labs/gothumb'
-  head 'https://github.com/opendoor-labs/gothumb.git'
+
+  url 'https://github.com/opendoor-labs/gothumb.git',
+    :tag => 'v0.1',
+    :revision => '91aee5bffe8fb1e1eb32029342bb9e4f3773001c'
 
   depends_on 'homebrew/science/vips'
   depends_on 'go' => :build
