@@ -3,8 +3,8 @@ class Pusher < Formula
   homepage 'https://github.com/opendoor-labs/pusher'
 
   url 'https://github.com/opendoor-labs/pusher.git',
-    :tag => 'v0.2',
-    :revision => '8e473b9969d17d23f24f26337173531ee17f50bd'
+    :tag => 'v0.3',
+    :revision => '1cff661215e322787c0bf5ed3de5f47db31a22f7'
 
   depends_on 'elixir'
   depends_on 'redis'
