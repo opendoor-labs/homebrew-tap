@@ -6,7 +6,7 @@ class Gothumb < Formula
 
   url 'https://github.com/opendoor-labs/gothumb.git',
     :tag => 'v0.3',
-    :revision => '4ec67c69825c65aa916db064332bbeb3b191f252'
+    :revision => '926fceb9b8212fcfab44c2e887f727278eaefb5c'
 
   depends_on 'homebrew/science/vips'
   depends_on 'go' => :build
