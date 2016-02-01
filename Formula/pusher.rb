@@ -13,7 +13,7 @@ class Pusher < Formula
     ENV['MIX_ENV'] = 'brew'
     system 'mix', 'local.hex', '--force'
     system 'mix', 'local.rebar', '--force'
-    system 'mix', 'archive.install', 'https://github.com/phoenixframework/phoenix/releases/download/v1.1.0/phoenix_new-1.1.0.ez', '--force'
+    system 'mix', 'archive.install', 'https://github.com/phoenixframework/archives/raw/master/phoenix_new-1.1.0.ez', '--force'
     system 'mix', 'deps.get'
     system 'mix', 'phoenix.digest'
     system 'mix', 'release'
