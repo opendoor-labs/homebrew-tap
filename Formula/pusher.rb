@@ -1,10 +1,10 @@
 class Pusher < Formula
   desc 'pusher'
   homepage 'https://github.com/opendoor-labs/pusher'
+  version '0.4'
 
   url 'https://github.com/opendoor-labs/pusher.git',
-    :tag => 'v0.3',
-    :revision => '1cff661215e322787c0bf5ed3de5f47db31a22f7'
+    :revision => 'b843da27a422e127f4a9cb2225bef9aabae66da7'
 
   depends_on 'elixir'
   depends_on 'redis'
@@ -13,9 +13,8 @@ class Pusher < Formula
     ENV['MIX_ENV'] = 'brew'
     system 'mix', 'local.hex', '--force'
     system 'mix', 'local.rebar', '--force'
-    system 'mix', 'archive.install', 'https://github.com/phoenixframework/archives/raw/master/phoenix_new-1.1.0.ez', '--force'
+    system 'mix', 'archive.install', 'https://github.com/phoenixframework/archives/raw/master/phoenix_new-1.2.0.ez', '--force'
     system 'mix', 'deps.get'
-    system 'mix', 'phoenix.digest'
     system 'mix', 'release'
     cp_r Dir.glob('rel/pusher/*'), prefix
   end
