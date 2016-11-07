@@ -5,7 +5,7 @@ class VowpalWabbit710 < Formula
   homepage "https://github.com/JohnLangford/vowpal_wabbit"
   head "https://github.com/JohnLangford/vowpal_wabbit.git"
   url "https://github.com/JohnLangford/vowpal_wabbit/archive/7.10.tar.gz"
-  sha1 "66f476926c760d5b604057796f7e19c52d7702a8"
+  sha256 "8d9aeddd9a5b7d73264fe28264f05f2a2b6a8fa38f65b02081c6e40460604c36"
 
   bottle do
     cellar :any
