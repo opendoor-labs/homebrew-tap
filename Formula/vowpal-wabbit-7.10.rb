@@ -7,13 +7,6 @@ class VowpalWabbit710 < Formula
   url "https://github.com/JohnLangford/vowpal_wabbit/archive/7.10.tar.gz"
   sha256 "8d9aeddd9a5b7d73264fe28264f05f2a2b6a8fa38f65b02081c6e40460604c36"
 
-  bottle do
-    cellar :any
-    sha1 "a7bd0836491357e0b148389126eabb520707360a" => :yosemite
-    sha1 "97d1725e7bdc7aa2518ce32aee164255244ee032" => :mavericks
-    sha1 "ad337507a088dadaa29ae839c09cbfd09a0eed6a" => :mountain_lion
-  end
-
   if MacOS.version < :mavericks
     depends_on "boost" => "c++11"
   else
