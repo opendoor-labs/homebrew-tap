@@ -1,4 +1,4 @@
-class Postgresql < Formula
+class Postgresql954 < Formula
   desc "Object-relational database system"
   homepage "https://www.postgresql.org/"
   url "https://ftp.postgresql.org/pub/source/v9.5.4/postgresql-9.5.4.tar.bz2"
