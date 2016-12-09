@@ -94,8 +94,8 @@ class Postgis222 < Formula
     bin.install Dir["stage/**/bin/*"]
     lib.install Dir["stage/**/lib/*"]
     include.install Dir["stage/**/include/*"]
-    (doc/"postgresql/extension").install Dir["stage/**/share/doc/postgresql/extension/*"]
-    (share/"postgresql/extension").install Dir["stage/**/share/postgresql/extension/*"]
+    (doc/"postgresql95/extension").install Dir["stage/**/share/doc/postgresql95/extension/*"]
+    (share/"postgresql95/extension").install Dir["stage/**/share/postgresql95/extension/*"]
     pkgshare.install Dir["stage/**/contrib/postgis-*/*"]
     (share/"postgis_topology").install Dir["stage/**/contrib/postgis_topology-*/*"]
 
@@ -128,7 +128,7 @@ class Postgis222 < Formula
       PostGIS plugin libraries installed to:
         #{HOMEBREW_PREFIX}/lib
       PostGIS extension modules installed to:
-        #{HOMEBREW_PREFIX}/share/postgresql/extension
+        #{HOMEBREW_PREFIX}/share/postgresql95/extension
       EOS
   end
 
