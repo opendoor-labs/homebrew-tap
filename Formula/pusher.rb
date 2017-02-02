@@ -1,10 +1,10 @@
 class Pusher < Formula
   desc 'pusher'
   homepage 'https://github.com/opendoor-labs/pusher'
-  version '0.4.1'
+  version '0.5'
 
   url 'https://github.com/opendoor-labs/pusher.git',
-    :revision => 'ff891ff73bf7e08a20a3a6cd8ee347a6658c90a7'
+    :revision => 'c07bb507c327c0503b879bb588ce2259ff7b06d5'
 
   depends_on 'elixir'
   depends_on 'redis'
