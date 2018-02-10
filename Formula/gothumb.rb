@@ -21,6 +21,7 @@ class Gothumb < Formula
     ln_sf buildpath, buildpath/'src/github.com/opendoor-labs/gothumb'
     Language::Go.stage_deps resources, buildpath/"src"
 
+    ENV['CGO_CFLAGS_ALLOW'] = '-Wl,(-framework|CoreFoundation)'
     system 'go', 'build', '-o', 'gothumb', '.'
     bin.install 'gothumb'
   end
