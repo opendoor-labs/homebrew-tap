@@ -8,7 +8,7 @@ class Gothumb < Formula
     :tag => 'v0.4',
     :revision => 'b9b48eb213a90f862ab10b263af33f3df14df9dc'
 
-  depends_on 'homebrew/science/vips'
+  depends_on 'vips'
   depends_on 'go' => :build
   depends_on 'glib' => :build
   depends_on 'libpng'
