@@ -115,7 +115,7 @@ class Postgis222 < Formula
   end
 
   def caveats
-    <<-EOS.undent
+    <<~EOS
       To create a spatially-enabled database, see the documentation:
         http://postgis.net/docs/manual-2.2/postgis_installation.html#create_new_db_extensions
       If you are currently using PostGIS 2.0+, you can go the soft upgrade path:
