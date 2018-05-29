@@ -1,9 +1,9 @@
 class Webby < Formula
   desc "Webby is an opinionated web app generator for front-end projects at Opendoor."
   homepage "https://github.com/opendoor-labs/webby"
-  url "https://github.com/opendoor-labs/webby/releases/download/0.2.0/webby",
+  url "https://github.com/opendoor-labs/webby/releases/download/0.2.1/webby",
     :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-  sha256 "fa456a78afeaf470f040a4c287ecdd75baae31039592970223c9589ff66e6750"
+  sha256 "5e374e72777d63d519db49e792cb2a8c749f9437a7d790f208a3b869f65e4962"
 
   bottle :unneeded
 
