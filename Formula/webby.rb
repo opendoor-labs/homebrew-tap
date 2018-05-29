@@ -3,7 +3,7 @@ class Webby < Formula
   homepage "https://github.com/opendoor-labs/webby"
   url "https://github.com/opendoor-labs/webby/releases/download/0.2.1/webby",
     :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-  sha256 "5e374e72777d63d519db49e792cb2a8c749f9437a7d790f208a3b869f65e4962"
+  sha256 "24d7cdace4c6bc96b3204847853d1ad3363873e65a03feda8120ca64127eecd2"
 
   bottle :unneeded
 
