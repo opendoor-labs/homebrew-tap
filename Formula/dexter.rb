@@ -1,15 +1,26 @@
 class Dexter < Formula
-  desc "A command line tool to login to Vault using Github"
+  desc "Command-line tool to login to Vault using Github"
   homepage "https://github.com/opendoor-labs/dexter"
-  url "https://s3.amazonaws.com/opendoor-brew-tap-bin/dexter-0.1.0.tar.gz"
-  sha256 "dd797bc1c818cd8d896318147c28183660c710902c8ba1d00f1df6aade5dd5dc"
-  version "0.1.0"
-
-  depends_on "curl"
-
-  bottle :unneeded
+  url "git@github.com:opendoor-labs/dexter",
+      :using    => :git,
+      :tag      => "v0.7.0",
+      :revision => "a8269e08057a8f99c0546acd733cca3b6aeb916b"
+  head "git@github.com:opendoor-labs/dexter"
+  depends_on "dep" => :build
+  depends_on "go" => :build
 
   def install
-    bin.install "dexter"
+    ENV["GOPATH"] = buildpath
+    (buildpath/"src/github.com/opendoor-labs/dexter").install buildpath.children
+
+    cd "src/github.com/opendoor-labs/dexter" do
+      system "dep", "ensure", "-vendor-only"
+      system "make", "ARTIFACT=#{bin/"dexter"}", "OS=darwin", "BASE_VERSION=#{version}"
+      prefix.install_metafiles
+    end
+  end
+
+  test do
+    assert_match "dexter is a authentication helper", shell_output("#{bin}/dexter")
   end
 end
