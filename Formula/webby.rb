@@ -1,3 +1,5 @@
+require_relative '../lib/download_strategy'
+
 class Webby < Formula
   desc "Webby is an opinionated web app generator for front-end projects at Opendoor."
   homepage "https://github.com/opendoor-labs/webby"
