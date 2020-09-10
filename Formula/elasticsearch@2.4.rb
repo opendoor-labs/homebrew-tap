@@ -9,7 +9,7 @@ class ElasticsearchAT24 < Formula
 
   keg_only :versioned_formula
 
-  deprecate! :date => "2018-02-28"
+  deprecate! :date => "2018-02-28", :because => :deprecated_upstream
 
   depends_on :java => "1.8"
 
