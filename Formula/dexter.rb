@@ -3,10 +3,9 @@ class Dexter < Formula
   homepage "https://github.com/opendoor-labs/dexter"
   url "git@github.com:opendoor-labs/dexter",
       :using    => :git,
-      :tag      => "v0.7.0",
-      :revision => "a8269e08057a8f99c0546acd733cca3b6aeb916b"
+      :tag      => "v0.7.1",
+      :revision => "9a3c20c119f1a2a0aa55fdbf488828edaa338178"
   head "git@github.com:opendoor-labs/dexter"
-  depends_on "dep" => :build
   depends_on "go" => :build
 
   def install
@@ -14,7 +13,6 @@ class Dexter < Formula
     (buildpath/"src/github.com/opendoor-labs/dexter").install buildpath.children
 
     cd "src/github.com/opendoor-labs/dexter" do
-      system "dep", "ensure", "-vendor-only"
       system "make", "ARTIFACT=#{bin/"dexter"}", "OS=darwin", "BASE_VERSION=#{version}"
       prefix.install_metafiles
     end
