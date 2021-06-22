@@ -6,11 +6,10 @@ class VowpalWabbit821 < Formula
   head "https://github.com/JohnLangford/vowpal_wabbit.git"
 
   bottle do
-    cellar :any
-    sha256 "b4b2e46f945a6886ce72d1cccabd8ea7639fb4057385de09b6faf34fbd35a363" => :sierra
-    sha256 "369dbd0266e777f4fa9ab2d31b216974cef013f3ad79307dcd93eea7584dffe6" => :el_capitan
-    sha256 "9180ead040a4daf5727d18328f39e82aa33fe6b684d4366502462449999f70fd" => :yosemite
-    sha256 "3ba964d1da671f6f88e1f2a2d8509ed190f5b02ce1c19f5bbbccac24a1f709d6" => :mavericks
+    sha256 cellar: :any, sierra:     "b4b2e46f945a6886ce72d1cccabd8ea7639fb4057385de09b6faf34fbd35a363"
+    sha256 cellar: :any, el_capitan: "369dbd0266e777f4fa9ab2d31b216974cef013f3ad79307dcd93eea7584dffe6"
+    sha256 cellar: :any, yosemite:   "9180ead040a4daf5727d18328f39e82aa33fe6b684d4366502462449999f70fd"
+    sha256 cellar: :any, mavericks:  "3ba964d1da671f6f88e1f2a2d8509ed190f5b02ce1c19f5bbbccac24a1f709d6"
   end
 
   if MacOS.version < :mavericks
