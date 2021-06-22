@@ -7,10 +7,9 @@ class HelmAT213 < Formula
   head "https://github.com/helm/helm.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "30f412ad5b85b63edbd373cfca01fd51530ebcac9d38293725b05c04b97cc8b0" => :mojave
-    sha256 "040fe1324e5129750d5d4c1a4cc233f8398f6ef6a368eb83cfc7bd10e785f4d8" => :high_sierra
-    sha256 "09897c4363a5f8aea65a1159aca38df674fd6564bcb90a6243232e555cdbb617" => :sierra
+    sha256 cellar: :any_skip_relocation, mojave:      "30f412ad5b85b63edbd373cfca01fd51530ebcac9d38293725b05c04b97cc8b0"
+    sha256 cellar: :any_skip_relocation, high_sierra: "040fe1324e5129750d5d4c1a4cc233f8398f6ef6a368eb83cfc7bd10e785f4d8"
+    sha256 cellar: :any_skip_relocation, sierra:      "09897c4363a5f8aea65a1159aca38df674fd6564bcb90a6243232e555cdbb617"
   end
 
   depends_on "glide" => :build
