@@ -7,8 +7,6 @@ class Webby < Formula
     :using => GitHubPrivateRepositoryReleaseDownloadStrategy
   sha256 "cded274176220922e13f5919d505ce9f3c41ee25c61fc4ab8c12447888818f7a"
 
-  bottle :unneeded
-
   def install
     bin.install "webby"
   end
