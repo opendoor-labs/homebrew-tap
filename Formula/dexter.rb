@@ -6,7 +6,7 @@ class Dexter < Formula
       :tag      => "v0.7.1",
       :revision => "9a3c20c119f1a2a0aa55fdbf488828edaa338178"
   head "git@github.com:opendoor-labs/dexter"
-  depends_on "go@1.17" => :build
+  depends_on "go" => :build
 
   def install
     ENV["GOPATH"] = buildpath
