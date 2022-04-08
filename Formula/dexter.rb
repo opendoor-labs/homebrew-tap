@@ -3,12 +3,10 @@ class Dexter < Formula
   homepage "https://github.com/opendoor-labs/dexter"
   url "git@github.com:opendoor-labs/dexter",
       :using    => :git,
-      :tag      => "v0.7.1",
-      :revision => "9a3c20c119f1a2a0aa55fdbf488828edaa338178"
+      :tag      => "v0.7.2",
+      :revision => "43a8e1d036d2e33065cfb3edf573a4745a5535b5"
   head "git@github.com:opendoor-labs/dexter"
-  # work around "//go:linkname must refer to declared function or variable" error
-  # until our version of dexter can compile on go 1.18+
-  depends_on "go@1.17" => :build
+  depends_on "go" => :build
 
   def install
     ENV["GOPATH"] = buildpath
