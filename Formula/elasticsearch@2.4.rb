@@ -5,13 +5,9 @@ class ElasticsearchAT24 < Formula
   sha256 "5f7e4bb792917bb7ffc2a5f612dfec87416d54563f795d6a70637befef4cfc6f"
   revision 1
 
-  bottle :unneeded
-
   keg_only :versioned_formula
 
   deprecate! :date => "2018-02-28", :because => :deprecated_upstream
-
-  depends_on "openjdk@8"
 
   def cluster_name
     "elasticsearch_#{ENV["USER"]}"
