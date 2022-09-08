@@ -4,6 +4,9 @@ class Rdi < Formula
   
   url "git@github.com:opendoor-labs/rdi", using: :git, branch: "main"
   version "0.0.1"
+  depends_on "awscli"
+  depends_on "saml2aws"
+  depends_on "jq"
 
   def install
     libexec.install "rdi", "ec2_script.sh", "ssh_config"
