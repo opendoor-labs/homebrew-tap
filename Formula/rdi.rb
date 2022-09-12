@@ -3,7 +3,7 @@ class Rdi < Formula
   homepage "https://github.com/opendoor-labs/rdi"
   
   url "git@github.com:opendoor-labs/rdi", using: :git, branch: "main"
-  version "0.0.2"
+  version "0.0.3"
   depends_on "awscli"
   depends_on "saml2aws"
   depends_on "jq"
