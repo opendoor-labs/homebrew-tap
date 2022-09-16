@@ -4,8 +4,8 @@ class Rdi < Formula
   
   url "git@github.com:opendoor-labs/rdi", 
     using: :git,
-    revision: "db1962cba253f8656f1b9001cad995c85a642466"
-  version "0.0.5"
+    revision: "2cb3014ad7dc91136a9338e73f4f3178f03ea707"
+  version "0.0.6"
   depends_on "awscli"
   depends_on "saml2aws"
   depends_on "jq"
