@@ -11,7 +11,7 @@ class Rdi < Formula
   depends_on "jq"
 
   def install
-    libexec.install "rdi", "ec2_script.sh", "ssh_config"
+    libexec.install "rdi", "ec2_script.sh"
     bin.install_symlink libexec/"rdi"
   end
 
