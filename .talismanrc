@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: Formula/dexter.rb
+  checksum: 42805405d287d13e7ac1b1840b54b83f3601406935eaf00aaf7bc0a3c1f6c7be
+version: "1.0"
