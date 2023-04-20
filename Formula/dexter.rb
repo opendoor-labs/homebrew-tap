@@ -3,8 +3,8 @@ class Dexter < Formula
   homepage "https://github.com/opendoor-labs/dexter"
   url "git@github.com:opendoor-labs/dexter",
       :using    => :git,
-      :tag      => "v0.7.2",
-      :revision => "43a8e1d036d2e33065cfb3edf573a4745a5535b5"
+      :tag      => "v0.7.4",
+      :revision => "4bda18069c602c525134c2c4868ab562085ec01b"
   head "git@github.com:opendoor-labs/dexter"
   depends_on "go" => :build
 
